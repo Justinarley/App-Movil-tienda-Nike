@@ -5,7 +5,9 @@ class Navbar extends StatelessWidget {
   final String accountName = "Nike";
   final String accountEmail = "Nikeairforce@gmail.com";
 
-  const Navbar({Key? key, required String accountName, required String accountEmail}) : super(key: key);
+  const Navbar(
+      {Key? key, required String accountName, required String accountEmail})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +19,7 @@ class Navbar extends StatelessWidget {
             accountEmail: Text(accountEmail),
             currentAccountPicture: CircleAvatar(
               child: ClipOval(
-                child: Image.asset("Img/homero.jpeg"),
+                child: Image.asset("Img/nike.jpeg"),
               ),
             ),
           ),
